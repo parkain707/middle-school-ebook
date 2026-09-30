@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전자책 외부 임베드 카드 위젯</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    body { font-family: 'Pretendard', sans-serif; }
+  </style>
+</head>
+<body class="bg-transparent p-4 flex items-center justify-center">
+
+  <!-- 임베드 배너 카드 컨테이너 -->
+  <div class="w-full max-w-md bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-slate-700/80 rounded-2xl p-5 shadow-2xl text-white relative overflow-hidden">
+    <!-- 장식용 글로우 -->
+    <div class="absolute -top-12 -right-12 w-36 h-36 bg-cyan-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="flex gap-4 items-center">
+      <!-- 3D 표지 썸네일 -->
+      <div class="w-28 flex-shrink-0 relative group">
+        <img src="/cover.jpg" alt="전자책 표지" class="w-full rounded-lg shadow-lg border border-slate-600/50 object-cover aspect-[3/4] group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute top-1 left-1 bg-amber-500/90 text-slate-950 font-black text-[9px] px-1.5 py-0.5 rounded">44P 완결</div>
+      </div>
+
+      <!-- 도서 요약 메타데이터 -->
+      <div class="flex-1 min-w-0">
+        <div class="inline-block px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold text-[10px] mb-1">
+          예비 중1 10대 전 과목 시크릿
+        </div>
+        <h3 class="font-extrabold text-base leading-snug truncate text-slate-100">
+          꿈을 여는 공부의 새벽
+        </h3>
+        <p class="text-xs text-slate-400 mt-0.5">지은이: 6학년 3반 담임 선생님</p>
+        
+        <div class="mt-2 flex items-baseline gap-2">
+          <span class="text-amber-400 font-black text-lg">70,000 미소</span>
+          <span class="text-slate-500 text-xs line-through">100,000 미소</span>
+        </div>
+        <p class="text-[11px] text-cyan-400 font-medium">결제: 경제앱으로 박희망에게 입금</p>
+      </div>
+    </div>
+
+    <!-- 액션 버튼 -->
+    <div class="mt-4 pt-3 border-t border-slate-800 flex gap-2">
+      <a href="/" target="_blank" class="flex-1 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold text-center border border-slate-700 transition">
+        📖 상세 정보 & 목차
+      </a>
+      <button onclick="openWidgetOrderModal()" class="flex-1 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-xs font-black text-center shadow-lg shadow-cyan-500/20 transition">
+        ⚡ 7만 미소로 신청
+      </button>
+    </div>
+  </div>
+
+  <!-- 간단 주문 팝업 모달 -->
+  <div id="widget-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+    <div class="bg-slate-900 border border-slate-700 w-full max-w-sm rounded-2xl p-5 text-white shadow-2xl relative">
+      <button onclick="closeWidgetOrderModal()" class="absolute top-3 right-3 text-slate-400 hover:text-white font-bold text-sm">✕</button>
+      <h4 class="font-bold text-base text-slate-100 mb-1">📥 전자책 주문 신청</h4>
+      <p class="text-xs text-slate-400 mb-3">경제앱으로 박희망에게 70,000 미소 입금 시 즉시 이메일 발송</p>
+
+      <form onsubmit="handleWidgetSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs text-slate-300 mb-1 font-semibold">받으실 분 성함</label>
+          <input type="text" id="w-name" required placeholder="예: 김민준" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 mb-1 font-semibold">수신 이메일 (PDF 전송용)</label>
+          <input type="email" id="w-email" required placeholder="예: student@school.net" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 mb-1 font-semibold">연락처 (선택)</label>
+          <input type="tel" id="w-phone" placeholder="010-0000-0000" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-400">
+        </div>
+        <button type="submit" class="w-full py-2.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 font-bold text-xs text-white shadow-md transition mt-2">
+          신청 완료 (경제앱으로 70,000 미소 입금)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openWidgetOrderModal() {
+      document.getElementById('widget-modal').classList.remove('hidden');
+    }
+    function closeWidgetOrderModal() {
+      document.getElementById('widget-modal').classList.add('hidden');
+    }
+    async function handleWidgetSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('w-name').value;
+      const email = document.getElementById('w-email').value;
+      const phone = document.getElementById('w-phone').value;
+
+      try {
+        const res = await fetch('/api/order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, phone })
+        });
+        const data = await res.json();
+        if (data.success) {
+          alert(`[주문 접수 완료]\n\n주문번호: ${data.order_id}\n신청자: ${data.buyer_name}님\n교재값: 70,000 미소\n결제수단: 경제앱으로 박희망에게 입금\n\n경제앱으로 입금이 확인되는 즉시 등록하신 ${data.buyer_email}로 전자책 다운로드 링크가 자동 전송됩니다!`);
+          closeWidgetOrderModal();
+        } else {
+          alert('오류: ' + (data.error || '주문 접수 실패'));
+        }
+      } catch (err) {
+        alert('서버 연결 중 오류가 발생했습니다: ' + err.message);
+      }
+    }
+  </script>
+</body>
+</html>

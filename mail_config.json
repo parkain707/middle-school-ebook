@@ -1,0 +1,9 @@
+{
+  "simulation_mode": true,
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "your_email@gmail.com",
+  "smtp_password": "your_app_password",
+  "sender_name": "6학년 3반 담임 선생님 (박희망)",
+  "sender_email": "hope_park_classroom@school.net"
+}

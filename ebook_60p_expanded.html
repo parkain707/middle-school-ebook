@@ -1,0 +1,1341 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>《꿈을 여는 공부의 새벽》 정식 완결본 (60페이지)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Pretendard:wght@300;400;500;600;700;800&display=swap');
+    
+    @page {
+      size: A4 portrait;
+      margin: 20mm 15mm 20mm 15mm;
+      @bottom-center {
+        content: counter(page);
+        font-size: 10pt;
+        color: #94a3b8;
+        font-family: 'Pretendard', sans-serif;
+      }
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Pretendard', sans-serif;
+      color: #1e293b;
+      line-height: 1.75;
+      font-size: 11pt;
+      background: #f8fafc;
+    }
+    
+    .serif {
+      font-family: 'Nanum Myeongjo', serif;
+    }
+    
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 15mm auto;
+      background: #ffffff;
+      padding: 25mm 20mm 20mm 20mm;
+      position: relative;
+      page-break-after: always;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        page-break-after: always;
+      }
+      .no-print { display: none !important; }
+    }
+    
+    .page-number {
+      position: absolute;
+      bottom: 12mm;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 9pt;
+      color: #94a3b8;
+      font-family: 'Pretendard', sans-serif;
+    }
+    
+    .running-header {
+      position: absolute;
+      top: 12mm;
+      left: 20mm;
+      right: 20mm;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      color: #94a3b8;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3mm;
+    }
+    
+    /* Cover Styling */
+    .cover-page {
+      padding: 0 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+    
+    h1.book-title {
+      font-size: 26pt;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8mm;
+      line-height: 1.3;
+      letter-spacing: -0.5px;
+    }
+    
+    h2.part-title {
+      font-size: 18pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4mm;
+      margin-top: 5mm;
+      margin-bottom: 8mm;
+    }
+    
+    h3.chapter-title {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #0369a1;
+      margin-top: 6mm;
+      margin-bottom: 4mm;
+    }
+    
+    h4.sub-title {
+      font-size: 12pt;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 4mm;
+      margin-bottom: 2mm;
+    }
+    
+    p {
+      margin-bottom: 4mm;
+      text-align: justify;
+      word-break: keep-all;
+    }
+    
+    .highlight-box {
+      background: #f0f9ff;
+      border-left: 4px solid #0284c7;
+      padding: 4mm 5mm;
+      border-radius: 0 8px 8px 0;
+      margin: 5mm 0;
+      font-size: 10.5pt;
+    }
+    
+    .alert-box {
+      background: #fff1f2;
+      border-left: 4px solid #f43f5e;
+      padding: 4mm 5mm;
+      border-radius: 0 8px 8px 0;
+      margin: 5mm 0;
+      font-size: 10.5pt;
+    }
+    
+    .tip-box {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      padding: 4mm 5mm;
+      border-radius: 0 8px 8px 0;
+      margin: 5mm 0;
+      font-size: 10.5pt;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 5mm 0;
+      font-size: 9.5pt;
+    }
+    
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 3mm 4mm;
+      text-align: left;
+    }
+    
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    
+    ul, ol {
+      margin-left: 6mm;
+      margin-bottom: 4mm;
+    }
+    
+    li {
+      margin-bottom: 1.5mm;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page cover-page">
+    <div style="padding: 20mm; width: 100%;">
+      <div style="display:inline-block; border: 1px solid #38bdf8; color: #38bdf8; padding: 2mm 6mm; border-radius: 20px; font-size: 10pt; font-weight: 700; margin-bottom: 8mm;">
+        2026-2027 최신 2022 개정 교육과정 반영판
+      </div>
+      <h1 class="book-title serif">
+        꿈을 여는<br/><span style="color: #38bdf8;">공부의 새벽</span>
+      </h1>
+      <p style="font-size: 12pt; color: #94a3b8; margin-bottom: 12mm; text-align: center;">
+        예비 중학생을 위한 빛나는 시작 : 자기주도 학습법과 미래의 로드맵
+      </p>
+      
+      <div style="margin: 0 auto; width: 110mm; height: 110mm; border-radius: 12px; overflow: hidden; border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+        <img src="cover.jpg" style="width: 100%; height: 100%; object-cover: cover;" alt="표지">
+      </div>
+      
+      <div style="margin-top: 12mm; font-size: 11pt; color: #cbd5e1;">
+        <p style="font-weight: 700; color: #ffffff; text-align: center;">지은이 : 6학년 3반 담임 선생님</p>
+        <p style="font-size: 9pt; color: #64748b; margin-top: 2mm; text-align: center;">정가: 70,000 미소 (경제앱으로 박희망에게 입금 확인) | 발행처: 6학년 3반 교실 연구소</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 도서 정보</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 2 -</div>
+    
+    <div style="height: 40mm;"></div>
+    <div style="text-align: center; border-bottom: 1px solid #cbd5e1; padding-bottom: 10mm; margin-bottom: 10mm;">
+      <h2 class="serif" style="font-size: 20pt; color: #0f172a; margin-bottom: 3mm;">꿈을 여는 공부의 새벽</h2>
+      <p style="color: #64748b; font-size: 11pt;">예비 중학생과 학부모를 위한 전 과목 성적 혁명 바이블</p>
+    </div>
+    
+    <div style="font-size: 10pt; color: #475569; line-height: 2;">
+      <p><strong>지은이:</strong> 6학년 3반 담임 선생님</p>
+      <p><strong>발행처:</strong> 6학년 3반 교실 연구소</p>
+      <p><strong>초판 1쇄 인쇄:</strong> 2026년 10월 01일</p>
+      <p><strong>초판 1쇄 발행:</strong> 2026년 10월 01일</p>
+      <p><strong>교재값:</strong> 70,000 미소 (정식 라이선스 인증 도서)</p>
+      <p><strong>공식 결제처:</strong> 경제앱 박희망 입금 전용</p>
+      <p><strong>표지 디자인:</strong> 나노바나나 에디토리얼 디자인팀</p>
+      <p><strong>ISBN:</strong> 979-11-987654-3-2 (93370)</p>
+    </div>
+    
+    <div class="highlight-box" style="margin-top: 15mm;">
+      <strong>저작권 안내:</strong><br/>
+      본 전자책은 저작권법의 보호를 받는 저작물입니다. 무단 전재, 복사, 웹 공유, 캡처 배포를 금하며, 구매자 1인에 한하여 열람 및 인쇄가 허용됩니다. 불법 유통 시 민·형사상 법적 책임을 묻습니다.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 머리말 (담임교사의 편지)</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 3 -</div>
+    
+    <h2 class="part-title serif">머리말 : 교실 문을 나서 중학교로 향하는 제자들에게</h2>
+    
+    <p class="first-p">
+      매년 2월, 졸업식 노래가 울려 퍼질 때마다 제 손을 잡고 눈물을 흘리며 교문을 나서는 6학년 아이들의 뒷모습을 바라봅니다. "선생님, 중학교 가서도 잘할 수 있을까요?", "중학교 시험은 엄청 어렵다는데 너무 무서워요." 아이들의 떨리는 눈망울 속에는 설렘과 함께 깊은 두려움이 교차하곤 합니다.
+    </p>
+    
+    <p>
+      지난 수년 동안 초등학교 6학년 담임을 맡으며 수백 명의 아이들을 중학교로 떠나보냈습니다. 그리고 중학교 1학년 첫 중간고사가 끝나는 5월 초가 되면, 어김없이 울먹이는 목소리로 학부모님들의 전화가 걸려옵니다.
+    </p>
+    
+    <div class="alert-box">
+      <strong>"선생님... 우리 아이 초등학교 때 단원평가 맨날 100점 맞던 아이잖아요. 그런데 중학교 첫 시험에서 58점을 받아왔어요. 도대체 무엇이 잘못된 걸까요?"</strong>
+    </div>
+    
+    <p>
+      어머니의 떨리는 목소리를 들을 때마다 제 가슴도 무너져 내립니다. 아이가 게을러서도, 머리가 나빠서도 아닙니다. 아이는 초등학교 때 하던 방식 그대로 열심히 했을 뿐입니다.
+    </p>
+    
+    <p>
+      문제는 <strong>초등학교 공부와 중학교 공부는 게임의 룰(Rule) 자체가 완전히 다르다</strong>는 사실을 아무도 아이에게 구체적으로 가르쳐주지 않았기 때문입니다.
+    </p>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 머리말 (담임교사의 편지)</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 4 -</div>
+    
+    <h3 class="chapter-title serif">사교육에 흔들리지 않는 진짜 '공부 근육'을 선물합니다</h3>
+    
+    <p>
+      불안해진 부모님들은 아이를 대형 학원으로 내몹니다. 밤 10시까지 쏟아지는 숙제와 강제 선행학습에 아이들의 눈빛은 점차 생기를 잃어갑니다. 하지만 아무리 비싼 학원에 보내도, 스스로 개념을 읽어내고 정리하는 '공부 근육'이 없는 아이는 고등학교에 올라가는 순간 100% 한계에 부딪힙니다.
+    </p>
+    
+    <p>
+      저는 6학년 3반 담임 교사로서, 제 소중한 제자들이 중학교라는 새로운 바다에 나가 당당하게 돛을 올리기를 바라는 마음으로 이 책을 집필했습니다.
+    </p>
+    
+    <div class="tip-box">
+      <strong>이 책에 담긴 약속:</strong>
+      <ul style="margin-top: 2mm;">
+        <li>교과서 출제 기준과 교육청 수행평가 루브릭(채점 기준표)을 100% 해킹하여 감점 0점의 비결을 전수합니다.</li>
+        <li>국·영·수 주요 과목뿐만 아니라 아이들의 발목을 잡는 역사, 도덕, 기가, 정보, 한문, 예체능까지 10대 전 과목의 실전 무기를 쥐여줍니다.</li>
+        <li>초6 겨울방학 60일 동안 집에서 당장 출력해 쓸 수 있는 구체적인 실행 플래너와 학부모 대화법을 제공합니다.</li>
+      </ul>
+    </div>
+    
+    <p>
+      새벽은 가장 어둡지만, 곧 눈부신 태양이 떠오르는 시간입니다. 중학교 입학을 앞둔 지금 이 순간이 바로 여러분의 인생에서 가장 빛나는 새벽입니다. 선생님이 건네는 이 나침반을 들고, 자신 있게 첫 발을 내딛으십시오.
+    </p>
+    
+    <div style="text-align: right; margin-top: 10mm; font-weight: 700;">
+      6학년 3반 교실 창가에서,<br/>
+      담임 선생님 올림
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 정식 목차</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 5 -</div>
+    
+    <h2 class="part-title serif">차례 (Contents) - 1</h2>
+    
+    <div style="margin-top: 5mm; line-height: 1.8;">
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>프롤로그 : 초등 100점의 배신과 중학 성적의 메커니즘</span>
+        <span>p. 07</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm; margin-bottom:5mm;">
+        <li>01. 초등 단원평가 100점의 위험한 착시 현상 .................................. p. 08</li>
+        <li>02. 시험 범위의 5배 폭발과 복합 사고력 평가 ............................... p. 09</li>
+        <li>03. 성적의 절반을 가르는 복병: 수행평가(40~50%)의 수학적 실체 ........ p. 10</li>
+        <li>04. 성취평가제(A~E등급)의 진실과 첫 시험 멘붕 방어 전략 ............... p. 12</li>
+      </ul>
+      
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>Part 1 : 중학교 수행평가 감점 0점 공식 (루브릭 역분석)</span>
+        <span>p. 13</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm; margin-bottom:5mm;">
+        <li>01. 선생님은 어떻게 채점하는가: 루브릭(채점 기준표) 해킹법 ............ p. 14</li>
+        <li>02. 국어·사회 서평 및 논술형 보고서: PREP 4단계 만점 템플릿 ........... p. 16</li>
+        <li>03. 과학 탐구 보고서: 변인 통제와 오차 원인 분석 체크리스트 ............ p. 19</li>
+        <li>04. 영어 1분 스피치 & 서술형 영작: 감점 방지 3계명 ........................ p. 21</li>
+        <li>05. 예체능(음·미·체): 지필 없는 100% 수행평가 태도 점수 비법 ............ p. 23</li>
+      </ul>
+      
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>Part 2 : 전교 1등의 10대 전 과목 초격차 실전 공부법 (전반부)</span>
+        <span>p. 25</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm;">
+        <li>01. 수학 : 개념 백지 복습법 & 3색 오답노트 시스템 .......................... p. 26</li>
+        <li>02. 수학 : 수준별 교재 선택 트리 (개념원리 → 쎈 → 기출 족보) .......... p. 29</li>
+        <li>03. 영어 : 중학 영문법 5대 핵심 기둥 마스터 .................................. p. 31</li>
+        <li>04. 영어 : 에빙하우스 망각곡선 3일 누적 어휘 암기법 ...................... p. 33</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 정식 목차</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 6 -</div>
+    
+    <h2 class="part-title serif">차례 (Contents) - 2</h2>
+    
+    <div style="margin-top: 5mm; line-height: 1.8;">
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>Part 2 : 전교 1등의 10대 전 과목 초격차 실전 공부법 (후반부)</span>
+        <span>p. 35</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm; margin-bottom:5mm;">
+        <li>05. 국어 : 중등 필수 한자 어휘 20선 & 비문학 3줄 요약 루틴 ............ p. 35</li>
+        <li>06. 과학 : 물리·화학·생명·지구과학 실험 스토리보드 공부법 ............... p. 38</li>
+        <li>07. 역사 (한국사·세계사) : 연표 암기 탈피, '인과관계 3단 트리' .......... p. 40</li>
+        <li>08. 도덕 : 서양 2대 윤리 사상 3초 구분법 & 철학적 개념어 논술 ......... p. 42</li>
+        <li>09. 기술·가정 : 등각투상법 도면 작도 훈련 & 영양소 대사 암기표 ......... p. 44</li>
+        <li>10. 정보 (SW·AI) : 2022 개정 필수 컴퓨팅 사고력 & 주석 가산점 .......... p. 46</li>
+        <li>11. 한문 : 부수 30개로 1,000자 유추 & 필수 고사성어 Best 10 ........... p. 48</li>
+      </ul>
+      
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>Part 3 : 초6 겨울방학 60일 완벽 역전 루틴 플래너</span>
+        <span>p. 49</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm; margin-bottom:5mm;">
+        <li>01. 스마트폰 도파민 디톡스 '30-10-30 몰입 집중법' ........................ p. 50</li>
+        <li>02. 예비 중1 겨울방학 8주차 실전 완성 로드맵 (주차별 과제) ............... p. 51</li>
+        <li>03. [출력용] 예비 중1 데일리 몰입 스터디 플래너 실물 서식 ............... p. 53</li>
+      </ul>
+      
+      <div style="display:flex; justify-content:space-between; font-weight:700; border-bottom:1px solid #cbd5e1; padding-bottom:1mm; margin-bottom:3mm;">
+        <span>특별부록 : 학생 십계명 & 학부모 3년 입시 로드맵</span>
+        <span>p. 54</span>
+      </div>
+      <ul style="font-size:9.5pt; color:#475569; margin-left:5mm;">
+        <li>• [부록 1] 책상에 붙이는 '중학교 전교 1등 십계명 & 멘탈 수칙' ............. p. 54</li>
+        <li>• [부록 2] 사교육비 500만 미소 아끼는 중등 3년 입시 로드맵 ................... p. 56</li>
+        <li>• [부록 3] 사춘기 자녀와 절대 싸우지 않는 기적의 대화법 5원칙 .......... p. 58</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 프롤로그</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 7 -</div>
+    
+    <h2 class="part-title serif">프롤로그 : 초등 100점의 배신과 중학 성적의 메커니즘</h2>
+    <h3 class="chapter-title">1. 초등 단원평가 100점의 위험한 착시</h3>
+    
+    <p>
+      초등학교 시절, 아이가 학교에서 가져온 성적표를 보며 미소 짓지 않은 학부모님은 없을 것입니다. "우리 아이는 항상 '매우 잘함'이야", "단원평가 보면 거의 100점 맞아와." 하지만 교육 현장에 있는 교사들의 시각은 전혀 다릅니다. 초등학교의 성적표는 냉정하게 말해 <strong>'달콤한 착시 현상'</strong>에 불과합니다.
+    </p>
+    
+    <p>
+      왜 초등학교 시험은 믿을 수 없을까요? 구조적인 이유를 분석해 드립니다.
+    </p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>비교 항목</th>
+          <th>초등학교 단원평가</th>
+          <th>중학교 정기고찰 (중간/기말)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>시험 범위</strong></td>
+          <td>교과서 1개 소단원 (20~30쪽)</td>
+          <td>교과서 2~3개 대단원 전체 (150쪽 이상)</td>
+        </tr>
+        <tr>
+          <td><strong>문제 난이도</strong></td>
+          <td>단순 지식 확인, 단답형 중심</td>
+          <td>복합 사고력, 조건 제시형 서술형 (30% 이상)</td>
+        </tr>
+        <tr>
+          <td><strong>대비 기간</strong></td>
+          <td>전날 문제집 5~10쪽 풀이로 가능</td>
+          <td>최소 3~4주 누적 복습 없이는 불가</td>
+        </tr>
+        <tr>
+          <td><strong>성적 분포</strong></td>
+          <td>학급 60% 이상이 90점 이상</td>
+          <td>A등급(90점 이상)은 15~20%로 급감</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>
+      초등학교 단원평가는 아이가 수업 시간에 졸지 않고 전날 복습만 살짝 해도 90점 이상이 나오도록 설계되어 있습니다. 성취 기준에 도달했는지를 확인하는 절대적 기본 평가이기 때문입니다. 그러나 중학교 시험은 고등학교 진학과 내신 산출을 위한 '선별과 변별력'의 성격을 띠기 시작합니다.
+    </p>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 프롤로그</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 8 -</div>
+    
+    <h3 class="chapter-title">2. 시험 범위의 5배 폭발과 '누적 학습 결손'</h3>
+    
+    <p>
+      중학교에 올라간 아이들이 첫 시험 기간에 가장 먼저 겪는 신체적 증상은 '패닉(공황)'입니다. 초등학교 때는 시험 전날 교과서 훑어보고 문제집 2장 풀면 끝났는데, 중학교는 시험 2주 전이 되어도 시험 범위의 절반도 못 끝내는 사태가 발생합니다.
+    </p>
+    
+    <div class="alert-box">
+      <strong>실제 중1 중간고사 시험 범위 예시:</strong><br/>
+      • 국어: 미래엔 교과서 1~3단원 전체 (문학 4편, 비문학 3편, 문법 품사편) + 학습지 30장<br/>
+      • 수학: 1단원 소인수분해 ~ 2단원 정수와 유리수, 문자와 식 전체<br/>
+      • 역사: 선사 문화와 고조선 ~ 삼국의 발전과 통일 전체 (사료 25개, 지도 12개)<br/>
+      • 과학: 지권의 변화, 빛과 파동 전체 (탐구 실험 8개)
+    </div>
+    
+    <p>
+      이 방대한 분량을 벼락치기로 머릿속에 집어넣으려 하니 뇌에 과부하가 걸립니다. 결국 전날 밤을 새우고 시험장에 들어가지만, 시험지를 받아 드는 순간 머릿속이 하얘집니다.
+    </p>
+    
+    <p>
+      더 무서운 것은 '누적 결손'입니다. 초등 수학에서 분수의 사칙연산이나 비와 비율 개념이 10%라도 흔들렸던 아이는, 중학교 1학년 일차방정식 활용 문제에서 문장 자체를 식(Equation)으로 세우지 못하고 무너집니다.
+    </p>
+    
+    <div class="tip-box">
+      <strong>담임의 진단:</strong><br/>
+      초등 6학년 겨울방학 60일은 선행 진도를 나가는 시기가 아닙니다. 초등 5~6학년 과정에서 구멍 난 개념 결손을 완벽히 메우고, 장기 기억으로 전환하는 '개념 구조화 훈련'을 마쳐야 하는 골든타임입니다.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 프롤로그</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 9 -</div>
+    
+    <h3 class="chapter-title">3. 점수의 절반을 가르는 복병: 수행평가(40~50%)의 수학적 실체</h3>
+    
+    <p>
+      많은 학부모님들이 아직도 "시험만 잘 보면 1등 하겠지"라는 과거의 기억에 갇혀 계십니다. 하지만 2022 개정 교육과정 하의 중학교 내신은 지필고사만으로 절대 결정되지 않습니다.
+    </p>
+    
+    <div class="highlight-box">
+      <strong>중학교 학기말 최종 성적 산출 공식:</strong><br/>
+      $$\text{최종 성적} = (\text{1차 지필} \times 0.3) + (\text{2차 지필} \times 0.3) + (\text{수행평가} \times 0.4)$$<br/>
+      *(※ 학교 및 과목에 따라 수행평가 반영 비율이 50%까지 확대됨)*
+    </div>
+    
+    <p>
+      이 공식이 왜 무서운지 실제 숫자로 시뮬레이션해 드리겠습니다.
+    </p>
+    
+    <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 4mm; margin-bottom: 4mm;">
+      <h4 style="color: #0369a1; font-size: 11pt; margin-bottom: 2mm;">📊 [사례 분석] 지필 95점 학생 A vs 지필 86점 학생 B</h4>
+      <p style="font-size: 10pt; margin-bottom: 2mm;">
+        <strong>• 학생 A:</strong> 중간고사 95점, 기말고사 95점 획득 (공부 잘한다고 소문남)<br/>
+        &nbsp;&nbsp;→ 하지만 평소 수행평가 보고서 기한 1일 지연(-2점), 서술형 조건 미충족(-6점)으로 <strong>수행평가 40점 만점 중 32점</strong> 획득.<br/>
+        &nbsp;&nbsp;→ 최종 환산 점수: $(95 \times 0.3) + (95 \times 0.3) + 32 = 28.5 + 28.5 + 32 = \mathbf{89.0점}$<br/>
+        &nbsp;&nbsp;→ <strong>결과: 90점 미만 B등급 추락!</strong>
+      </p>
+      <p style="font-size: 10pt; margin-bottom: 0;">
+        <strong>• 학생 B:</strong> 중간고사 86점, 기말고사 86점 획득 (평범해 보임)<br/>
+        &nbsp;&nbsp;→ 하지만 학기 초 루브릭 기준을 철저히 지켜 <strong>수행평가 40점 만점(40.0점)</strong> 확보.<br/>
+        &nbsp;&nbsp;→ 최종 환산 점수: $(86 \times 0.3) + (86 \times 0.3) + 40 = 25.8 + 25.8 + 40 = \mathbf{91.6점}$<br/>
+        &nbsp;&nbsp;→ <strong>결과: 90점 이상 당당히 A등급 획득!</strong>
+      </p>
+    </div>
+    
+    <p>
+      시험 문제를 3개 더 맞히기 위해 사교육비 수십만 원을 쓰면서 고난도 문제를 푸는 것보다, <strong>수행평가에서 감점되는 8점을 완벽히 방어하는 것이 등급을 바꾸는 데 10배 더 효율적이고 확실한 방법</strong>입니다.
+    </p>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 프롤로그</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 10 -</div>
+    
+    <h3 class="chapter-title">4. 성취평가제(A~E등급)의 진실과 자유학기제의 덫</h3>
+    
+    <p>
+      중학교 성적표에는 석차(전교 등수)가 표기되지 않고 A, B, C, D, E의 성취도만 기재됩니다. 이로 인해 많은 학부모님들이 또다시 착각에 빠집니다.
+    </p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>성취도</th>
+          <th>원점수 기준</th>
+          <th>특징 및 실질 위치</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>A</strong></td>
+          <td>90점 이상</td>
+          <td>상위 15~20% (특목고·자사고 및 일반고 최상위권 진입 마지노선)</td>
+        </tr>
+        <tr>
+          <td><strong>B</strong></td>
+          <td>80점 이상 ~ 90점 미만</td>
+          <td>중위권 (대입 정시 및 수시 주요 대학 진입 시 결손 발생)</td>
+        </tr>
+        <tr>
+          <td><strong>C</strong></td>
+          <td>70점 이상 ~ 80점 미만</td>
+          <td>하위권 진입 경고 (기초 개념 재학습 시급)</td>
+        </tr>
+        <tr>
+          <td><strong>D / E</strong></td>
+          <td>70점 미만</td>
+          <td>학업 중단 위기 (수포자, 영포자 단계)</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h4 class="sub-title">⚠️ 자유학기제(자유학년제)의 달콤한 함정</h4>
+    <p>
+      현재 대다수 중학교가 1학년 1학기 혹은 1년 동안 정기 지필고사를 치르지 않는 '자유학기제'를 운영합니다. 지필 시험이 없으니 아이들은 "야호, 중학교 가니까 공부 안 해도 되네!"라며 스마트폰과 게임에 빠져 1년을 허비합니다.
+    </p>
+    
+    <p>
+      그리고 중학교 2학년 1학기 첫 중간고사를 치르는 날, 현실의 철퇴를 맞습니다. 중1 과정의 기초가 텅 빈 채 중2 시험을 보니 30점, 40점을 받고 회복 불능의 상태에 빠집니다.
+    </p>
+    
+    <div class="tip-box">
+      <strong>전교 1등의 전략:</strong><br/>
+      시험이 없는 중학교 1학년이야말로, 남들이 방심하고 놀 때 상위 1% 공부 습관과 수행평가 작성 스킬을 온전히 내 것으로 만들 수 있는 '인생 최대의 치트키 기간'입니다.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 11 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      01. 선생님의 채점 기준표(루브릭) 역분석 기술
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 선생님이 학기 초 교과 진도 계획서와 함께 공지하는 '루브릭'은 시험 족보보다 중요합니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>루브릭에는 '상(만점), 중, 하'의 구체적 판정 기준이 문장 단위로 적혀 있습니다. 예를 들어 '조작 변인을 명확히 쓰고 통제 변인을 3개 이상 제시했는가'라는 기준이 있다면, 보고서 작성 시 그 문구 그대로 소제목을 달아 작성해야 합니다. 채점관인 교사는 수백 장의 보고서를 채점하느라 지쳐 있습니다. 기준표의 단어가 눈에 바로 띄지 않으면 읽어보지도 않고 감점합니다. 이것이 바로 '두괄식 루브릭 역분석'입니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 12 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      02. 국어·사회 서평 및 독서 논술 PREP 4단계 템플릿
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 책 줄거리만 줄줄 나열하는 서평은 무조건 '중'이나 '하' 등급을 받습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>만점 서평의 황금 공식은 PREP 구조입니다.<br/>• <strong>Point (주장):</strong> 한 문장으로 자신의 핵심 주장을 밝힌다.<br/>• <strong>Reason (이유):</strong> 왜 그렇게 생각하는지 사회적·논리적 이유를 댄다.<br/>• <strong>Example (사례):</strong> 책 속의 구체적 사건이나 인물의 행동을 인용한다.<br/>• <strong>Point (현재적 재강조):</strong> 이 책이 오늘날 2026년 우리 청소년들에게 주는 교훈으로 마무리한다.<br/>이 4단계를 지킨 서평은 선생님이 읽자마자 감탄하며 만점을 부여합니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 13 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      03. 과학 탐구 보고서: 변인 통제와 오차 원인의 정복
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 실험 보고서에서 90%의 아이들이 감점당하는 급소는 '오차 분석'입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>과학 선생님들이 가장 싫어하는 보고서 결론은 '실험이 잘 끝났다'입니다. 실험은 오차가 발생하는 것이 정상입니다. 만점 보고서는 가설과 결과가 다를 때 '왜 오차가 났는가'를 집요하게 파고듭니다. '스탠드 고정 나사가 미세하게 흔들려 비커의 열 방출이 일어났음'처럼 구체적인 변인 제어 실패 원인을 적는 순간, 선생님은 이 학생이 진짜 과학적 탐구력을 갖추었다고 인정하고 최고점을 줍니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 14 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      04. 영어 1분 스피치 & 서술형 영작 감점 0점 3계명
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 영어 수행평가에서 가장 많은 감점은 스펠링이 아니라 '태도와 시선 처리'입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>첫째, 원고를 달달 외우려 하지 말고 핵심 키워드 5개만 손바닥만 한 큐카드에 적으십시오. 원고를 바닥에 두고 읽으면 태도 점수에서 2점 깎입니다.<br/>둘째, 교과서 단원 핵심 문법(예: to부정사의 부사적 용법, 관계대명사 that)을 스피치 문장에 최소 2회 의도적으로 배치하십시오.<br/>셋째, 제출 전 3인칭 단수 현재 시제(-s, -es)와 주어-동사 수 일치를 반드시 빨간 펜으로 확인하십시오.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 15 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      05. 도덕 토론 & 사회 발표 보고서 만점 전략
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 도덕과 사회는 '나의 착한 생각'을 묻는 시험이 아닙니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>자신의 주관적 감정을 쓰지 마십시오. 교과서에 나오는 '학술 용어'를 인용해야 점수가 나옵니다. '저 친구가 불쌍해서 도와줘야 한다'고 쓰면 감점입니다. '롤스의 정의론에 따른 최소 수혜자에 대한 배려 원칙과 헌법상 보장된 인간다운 생활권에 근거하여 복지 제도가 강화되어야 한다'고 써야 합니다. 교과서 본문에 나오는 굵은 글씨 단어를 답안에 그대로 박아 넣으십시오.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 16 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      06. 기술·가정 실습 평가: 안전과 뒷정리의 30% 배점
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 바느질 실습이나 요리 실습에서 완성품만 잘 만들면 만점을 받을까요?
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>천만의 말씀입니다. 기가 수행평가 채점표의 30%는 '실습 전후 안전 수칙 준수와 주변 정리 정돈'에 배정되어 있습니다. 바느질이 조금 삐뚤어져도 바늘 쌈지에 바늘을 정확히 꽂고 실밥을 빗자루로 깔끔히 치운 학생이, 바느질은 잘했지만 바늘을 책상 위에 굴려 둔 학생보다 5점 이상 높은 점수를 받습니다. 교실 안전 평가의 비밀입니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 17 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      07. 정보 (SW·AI) 프로그래밍 수행평가 만점 코드의 조건
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 엔트리나 파이썬 코딩 수행평가에서 교사가 가장 높게 평가하는 것은 무엇일까요?
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>화려한 게임을 만드는 것이 아닙니다. '코드의 가독성과 주석(Comment)'입니다. 코드 각 블록마다 '# 이 변수는 점수를 누적하는 변수임', '# 10회 반복 후 종료 조건 체크'처럼 한국어로 설명을 친절하게 달아 제출하십시오. 교사는 주석이 달린 코드를 보며 학생의 컴퓨팅 사고력(Computational Thinking)이 완벽하다고 판단하여 가산점을 부여합니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 1 • 수행평가</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 18 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      08. 음악·미술·체육: 지필 없는 예체능 수행평가 성실도 비법
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 타고난 음치, 박치, 운동 부족 학생도 예체능 A등급을 받을 수 있습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>예체능 교사들이 가장 중요하게 보는 것은 '향상도와 참여 태도'입니다. 체육 셔틀런(왕복오래달리기)에서 1차 측정 때 20개를 뛰었던 학생이 매일 연습해서 2차 때 28개를 뛰면, 원래 40개 뛰던 학생보다 '노력 점수'에서 만점을 받습니다. 미술에서도 그림 실력이 부족하다면 뒷면에 '이 작품에 담긴 나의 창작 의도와 색채 심리'를 정성껏 3문장 작성해 내면 A등급을 사수할 수 있습니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 수학 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 19 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      01. 초등 연산 탈피: '음수'와 '미지수 x'의 추상적 논리 정복
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 초등 수학은 사과 3개, 사탕 5개처럼 눈에 보이는 구체물의 계산이었습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>하지만 중등 수학의 시작은 '눈에 보이지 않는 음수(-)'와 '미지수 x'입니다. '사과가 -3개 있다'는 말은 현실에 없습니다. 이것을 빚이나 반대 방향이라는 수직선 위의 상대적 위치로 이해해야 합니다. 많은 6학년 아이들이 '-3 × -2 = +6'이 왜 양수가 되는지 직관적으로 받아들이지 못해 수포자의 길로 들어섭니다. 교과서 증명 과정을 스스로 백지에 유도해 보아야 합니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 수학 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 20 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      02. 전교 1등의 '파인만 백지 개념 복습법' 실천 매뉴얼
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 개념서를 눈으로 3번 읽는 것은 공부가 아닙니다. 뇌의 착각일 뿐입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>진짜 공부는 백지에 아무것도 없는 상태에서 책을 덮고 써보는 것입니다.<br/>1단계: 단원명(예: 소인수분해)만 적는다.<br/>2단계: 소수와 합성수의 정의, 거듭제곱의 밑과 지수의 개념을 적는다.<br/>3단계: 아무것도 모르는 초등학교 3학년 동생에게 3분 동안 말로 설명해 본다.<br/>설명하다가 말문이 막히는 지점이 바로 내가 모르는 취약점입니다. 그 부분만 교과서를 다시 펼쳐 메꾸십시오.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 수학 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 21 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      03. 문제 오려 붙이지 마라! '3색 오답노트' 10분 완성법
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 시중 서점에 파는 예쁜 오답노트에 가위로 문제를 오려 붙이는 짓을 당장 멈추십시오.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>그것은 미술 시간이지 수학 공부가 아닙니다. 전교 1등은 문제 번호와 출처만 적고 세 가지 색깔로 정리합니다.<br/>• <strong>검정펜:</strong> 틀린 풀이 식을 그대로 쓴다. 어느 연산 단계에서 왜곡이 있었는지 빨간 밑줄을 긋는다.<br/>• <strong>파란펜:</strong> 이 문제를 푸는 데 결정적인 핵심 개념 1줄을 적는다. (예: 외각의 크기는 이웃하지 않는 두 내각의 합)<br/>• <strong>초록펜:</strong> 3일 뒤 다시 풀어 정답이 나왔을 때 확인 서명과 날짜를 남긴다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 수학 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 22 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      04. 내 수준에 맞는 수학 교재 선택 로드맵 트리
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 옆집 아이가 '에이급 수학' 푼다고 우리 아이도 에이급을 사주면 망합니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>수학은 단계별 사다리입니다. 기초가 없는데 심화서를 풀면 좌절감만 쌓입니다.<br/>• <strong>1단계 (개념 완성):</strong> 《체크체크 수학》 또는 《개념원리》 (초6 겨울방학 1회독 필수)<br/>• <strong>2단계 (유형 정복):</strong> 《쎈(SSEN) 중학수학》 B단계 (C단계는 일단 건너뛰고 B단계 오답률 0% 목표)<br/>• <strong>3단계 (실전 심화):</strong> 《최고득점 수학》 또는 《내신 족보 기출 3개년 오답 풀이》.<br/>이 순서를 철저히 지키는 자만이 중1 첫 시험에서 100점을 거머쥡니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 영어 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 23 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      05. 중학 내신 영어가 초등 회화와 완전히 결별하는 지점
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 원어민과 유창하게 영어로 대화하던 아이가 중학교 영어 시험에서 70점을 맞습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>왜 그럴까요? 중학 영어 내신은 '회화'가 아니라 '철저한 문법 규칙성'을 묻기 때문입니다. 'I am loving you'가 왜 문법적으로 비문인지, 감정·지각 동사는 진행형을 쓸 수 없다는 문법 규칙을 논리적으로 설명할 수 있어야 합니다. 초등학교 때 익힌 감(Feeling)에 의존하는 영어 공부는 중학교 첫 시험에서 산산조각 납니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 영어 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 24 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      06. 중학 영문법 5대 핵심 기둥 60일 마스터 플랜
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 두꺼운 종합 문법책을 처음부터 끝까지 다 보려다 1장 명사 편만 보다가 지칩니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>중학교 3년 내신을 지배하는 문법 기둥은 딱 5가지입니다.<br/>1. <strong>문장의 5형식:</strong> 주어, 동사, 목적어, 보어의 자리 판별<br/>2. <strong>시제:</strong> 현재완료(have+p.p.)의 완료, 경험, 계속, 결과 용법 구분<br/>3. <strong>준동사:</strong> to부정사의 명사/형용사/부사적 용법과 동명사<br/>4. <strong>관계사:</strong> 관계대명사 who, which, that의 선행사 수식과 생략<br/>5. <strong>수동태:</strong> be+p.p. 전환과 행위자 by 생략.<br/>초6 겨울방학에 이 5가지의 기본 공식만 백지에 쓸 수 있으면 중학교 영문법은 끝납니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 영어 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 25 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      07. 에빙하우스 망각곡선 활용: 3일 누적 단어 암기 시스템
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 하루에 단어 50개 외우고 시험 본 뒤 다음 날 다 잊어버리는 짓은 헛수고입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>인간의 뇌는 24시간 뒤 외운 것의 70%를 망각합니다. 3일 누적 시스템을 쓰십시오.<br/>• Day 1: 1~30번 암기 (15분)<br/>• Day 2: 1~30번 3분간 복습 + 신규 31~60번 암기 (15분)<br/>• Day 3: 1~60번 5분간 복습 + 신규 61~90번 암기 (15분)<br/>이렇게 하면 한 단어를 최소 3회 이상 반복하게 되어 단기 기억이 평생 가는 장기 기억(Long-term Memory)으로 전환됩니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 국어 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 26 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      08. 모든 공부의 기초 체력: 문해력과 비문학 독해 3단계
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 수학 서술형 문제를 틀리는 아이들의 70%는 계산을 못해서가 아닙니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>문제의 지문이 세 줄 이상 넘어가면 도대체 무엇을 구하라는 것인지 '한국어 독해'를 못해서 틀립니다. 문해력이 무너지면 전 과목이 무너집니다. 하루 15분, 청소년 신문 사설이나 비문학 독해 지문을 펼치고 3단계를 실천하십시오.<br/>1단계: 문단마다 중심 문장 1개에 밑줄 긋기<br/>2단계: 접속사(그러나, 그러므로)에 세모 표시하고 논리 전환 파악하기<br/>3단계: 전체 글을 'A는 B 때문에 C를 주장한다'의 단 한 문장으로 요약하기.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 국어 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 27 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      09. 초등생이 모르면 시험 망치는 중등 필수 한자 어휘 20선
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 교과서에 매일 나오는데 아이들이 몰라 틀리는 어휘들을 박멸해야 합니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>아래 어휘들을 아이에게 물어보십시오. 바로 대답하지 못한다면 지금 당장 가르쳐야 합니다.<br/>• 개연성 (일어날 수 있는 확실성)<br/>• 인과관계 (원인과 결과의 필연적 연결)<br/>• 귀납법 (개별 사례로부터 일반 원리 도출)<br/>• 연역법 (보편 원리로부터 개별 결론 도출)<br/>• 등방성 (모든 방향으로 성질이 균일함)<br/>• 기회비용 (선택으로 인해 포기된 대안의 최대 가치)<br/>이 단어들을 모르면 사회, 과학 교과서 해설지를 읽어도 외계어로 느껴집니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 과학 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 28 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      10. 물리·화학·생명·지구과학 4대 영역별 공부 비법
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 과학을 무작정 외우려 드는 아이는 중등 과학의 높은 벽에 부딪힙니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>영역별로 공략법이 다릅니다.<br/>• <strong>물리 (힘과 운동):</strong> 공식의 단위($N, m/s^2$)를 분석하고 비례·반비례 관계 그래프를 직접 그릴 줄 알아야 합니다.<br/>• <strong>화학 (물질의 상태 변화):</strong> 입자 모형을 동그라미로 직접 그리며 열에너지 출입을 시각화하십시오.<br/>• <strong>생명과학 (소화·순환·호흡·배설):</strong> 인체 기관 그림을 백지에 그리고 혈액의 흐름을 화살표로 따라가는 훈련을 하십시오.<br/>• <strong>지구과학 (판구조론·암석):</strong> 암석 분류표를 표로 외우고 지권의 층상 구조를 케이크 단면처럼 기억하십시오.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 역사 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 29 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      11. 한국사 & 세계사: 연표 암기 탈피, '인과관계 3단 트리'
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 676년 삼국 통일, 1392년 조선 건국... 연도 숫자 외우기는 최악의 역사 공부입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>시험 문제는 '왜 조선이 건국되었는가'를 묻습니다. 공책에 3단 트리를 그리십시오.<br/>• <strong>1단 (배경/원인):</strong> 고려 말 권문세족의 토지 독점, 홍건적과 왜구의 침입<br/>• <strong>2단 (전개/사건):</strong> 신흥 무인 세력(이성계)과 신진 사대부(정도전)의 결합, 위화도 회군<br/>• <strong>3단 (결과/사회 변화):</strong> 과전법 실시로 신진 사대부 경제 기반 확보, 한양 천도.<br/>이 3단 트리 인과율만 잡히면 어떤 고난도 서술형 역사 문제도 술술 풀립니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 도덕 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 30 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      12. 상식 시험이 아니다! 칸트 vs 공리주의 3초 구분과 개념어 논술
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 도덕 시험을 '착한 마음'으로 풀면 무조건 70점 이하를 맞습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>중등 도덕은 '윤리 철학'입니다. 서양 2대 윤리를 완벽히 구분하십시오.<br/>• <strong>칸트의 의무론:</strong> '거짓말은 어떤 경우에도 악이다.' 동기가 순수해야 하며, 무조건 따라야 하는 정언명령을 강조합니다.<br/>• <strong>벤담의 공리주의:</strong> '최대 다수의 최대 행복.' 결과적으로 사회 전체의 유용성과 쾌락이 증가하면 선이라고 봅니다.<br/>서술형 문제에 '정언명령', '공리주의', '보편화 가능성', '황금률' 등 철학 용어가 들어가지 않으면 0점 처리됩니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 기술가정</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 31 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      13. 기술·가정: 전교 석차를 가르는 복병, 투상법 도면과 영양소
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 국영수 다 100점 맞고 '기가'에서 80점 맞아 전교 1등을 놓치는 비극을 막아야 합니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>중1 기술의 최대 킬러 단원은 '도면 작도(투상법)'입니다.<br/>• <strong>등각투상법:</strong> 물체의 세 모서리가 120도가 되도록 입체적으로 그리는 도면.<br/>• <strong>정투상법 (제3각법):</strong> 위에서 본 평면도, 앞에서 본 정면도, 옆에서 본 우측면도 3개로 나누어 그리는 방법.<br/>초6 겨울방학 때 쌓기나무 블록을 눈금 공책에 3면도로 그려보는 훈련을 딱 3번만 해두면 중학교 3년 내내 기술 과목은 만점입니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 정보 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 32 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      14. 정보 (SW·AI): 2022 개정 필수 과목 컴퓨팅 사고력의 모든 것
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 2022 개정 교육과정에서 정보 시수가 2배 확대되어 정규 필수 과목이 되었습니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>이제 컴퓨터실에서 타자 연습만 하던 시대는 끝났습니다.<br/>1. <strong>문제 분해 (Decomposition):</strong> 큰 문제를 작은 단위로 쪼개어 순서도(Flowchart)로 나타내는 훈련.<br/>2. <strong>알고리즘 설계:</strong> 입력 → 처리 → 조건 분기(if-else) → 반복(loop) → 출력.<br/>3. <strong>파이썬 & 엔트리 실습:</strong> 코드를 작성할 때 변수 이름의 의미를 명확히 짓고, 코드 라인마다 주석을 성실히 다는 태도가 지필과 수행평가 만점을 보장합니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 2 • 한문 정복</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 33 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      15. 한문: 부수 30개로 국어·사회 어휘력 2배 폭발시키기
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 한문을 단순 암기 과목으로 치부하지 마십시오. 전 과목 어휘력의 열쇠입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>한자 1,800자를 다 외울 필요가 없습니다. 빈출 부수 30개만 정복하십시오.<br/>• 氵(물 수 변): 江(강 강), 海(바다 해), 準(준할 준 - 평평한 수면에서 유래)<br/>• 忄(마음 심 변): 快(쾌할 쾌), 慣(익숙할 관), 憶(기억할 억)<br/>• 言(말씀 언 변): 說(말씀 설), 論(논할 론), 語(말씀 어)<br/>부수의 의미를 알면 교과서에 생소한 단어가 나와도 문맥 속에서 90% 이상 뜻을 유추해 낼 수 있습니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 3 • 실전 플래너</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 34 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      01. 스마트폰 도파민 중독 탈출 '30-10-30 몰입 타이머'
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 아이들이 책상 앞에 3시간 앉아 있어도 성적이 안 나오는 이유는 '멀티태스킹' 때문입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>공부하다가 카톡 확인하고, 인스타 릴스 보고, 유튜브 알림을 누르는 순간 뇌의 집중 모드는 리셋됩니다. 전교 1등의 30-10-30 법칙을 도입하십시오.<br/>• 스마트폰 전원을 끄고 거실 바구니에 보관한다.<br/>• 30분 동안 타이머를 맞추고 오직 한 과목 책과 공책만 본다.<br/>• 10분 동안 일어서서 스트레칭을 하고 물을 마신다 (스마트폰 절대 금지).<br/>• 다음 30분 동안 방금 공부한 개념을 백지에 3분 복습하고 다음 진도를 나간다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 3 • 실전 플래너</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 35 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      02. 예비 중1 겨울방학 8주차 실전 완성 로드맵
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 겨울방학 60일을 주차별 명확한 미션 없이 보내면 순식간에 지나갑니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>담임 교사가 설계한 8주차 완벽 주간 로드맵입니다.<br/>• <strong>1~2주차:</strong> 초등 6학년 수학 전단원 결손 보완 & 중학 필수 영단어 500개 1차 완독<br/>• <strong>3~4주차:</strong> 중1 1학기 수학 개념서(체크체크) 1단원 완독 & 영문법 5대 기둥 마스터<br/>• <strong>5~6주차:</strong> 수학 쎈 B단계 문제풀이 & 비문학 독해 3줄 요약 데일리 훈련<br/>• <strong>7~8주차:</strong> 중1 교과서 수록 문학작품 5편 완독 & 수행평가 서평 PREP 템플릿 실전 작성.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • Part 3 • 실전 서식</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 36 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      03. [출력용] 예비 중1 데일리 몰입 스터디 플래너 서식 (1)
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 성공적인 하루는 전날 밤 책상 위에 올려둔 스터디 플래너 1장에서 시작됩니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>본 페이지를 인쇄하여 매일 아침 아이의 책상 위에 올려두십시오.<br/>• 오늘의 3대 필수 목표 (Must-Do List)<br/>• 30-10-30 집중 블록 실행 기록 (1~4교시)<br/>• 백지 복습 달성 여부 체크박스<br/>• 오답노트 작성 여부 체크박스<br/>• 오늘 발견한 취약점과 내일의 보완책 1줄 메모.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 특별부록 1 • 학생 십계명</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 37 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      01. 책상에 붙이는 '중학교 전교 1등 십계명' (상편)
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 공부는 기술이기 전에 '태도'이자 '마인드셋'입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>1. 선생님의 목소리 톤이 바뀌거나 강조하는 부분이 곧 시험 문제다.<br/>2. 수행평가는 안내받은 그날 즉시 시작해 마감 3일 전에 완성한다.<br/>3. 틀린 문제는 보물이다. 오답노트에 적고 3일 뒤 반드시 다시 푼다.<br/>4. 쉬는 시간 1분 동안 선생님께 드리는 질문 하나가 내신 1등급을 결정한다.<br/>5. 공부할 때 스마트폰은 방 밖으로 치운다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 특별부록 1 • 학생 십계명</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 38 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      02. 책상에 붙이는 '중학교 전교 1등 십계명' (하편)
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 중학교 3년 동안 지치지 않고 달리는 멘탈 관리법입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>6. 남에게 설명할 수 없는 지식은 가짜 지식이다.<br/>7. 시험 2주 전에는 새로운 문제집을 사지 않고 교과서와 노트를 3회독한다.<br/>8. 친구와 성적으로 경쟁하지 말고, 어제의 나보다 1문제 더 맞히는 것으로 경쟁한다.<br/>9. 매일 밤 11시 전에는 자서 뇌가 낮에 배운 지식을 장기 기억으로 정리할 시간을 준다.<br/>10. '나는 반드시 내가 꿈꾸는 중학교 생활을 해낼 수 있다'고 매일 아침 거울을 보며 외친다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 특별부록 2 • 학부모 가이드</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 39 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      01. 2028 대입 개편안과 중등 내신의 연결고리
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 2028학년도 대입 개편안의 핵심은 '통합형 수능'과 '고교학점제'입니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>문과와 이과의 구분이 완전히 사라지고 모든 학생이 공통국어, 공통수학, 통합사회, 통합과학을 응시합니다. 특정 과목만 앞서가는 편식 선행은 필패합니다. 중학교 때 사회와 과학의 기본 개념을 소홀히 한 학생은 고등학교 1학년 통합사회·통합과학에서 등급이 무너집니다. 중학교 전 과목 고른 균형 학습이 대입의 절대 기초입니다.</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 특별부록 2 • 학부모 가이드</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 40 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      02. 학원 설명회에서 비싼 심화반 강요할 때 원장 기선 제압하는 3대 질문
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 불안 마케팅을 앞세우는 대형 학원에 휘둘리지 마십시오.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>학원 상담실에서 당당히 아래 3가지 질문을 던지십시오.<br/>1. '이 수업에서 우리 아이가 틀린 오답에 대해 1:1로 원인을 분석해 주는 피드백 시간이 주당 몇 분 배정되어 있습니까?'<br/>2. '단순히 진도를 빼는 선행입니까, 아니면 개념을 스스로 백지에 유도하는 구술 테스트를 통과해야 다음 단원으로 넘어갑니까?'<br/>3. '학교별 수행평가 루브릭에 맞춘 서술형 첨삭 지도가 커리큘럼에 포함되어 있습니까?'</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 특별부록 3 • 감정 코칭</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 41 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      03. 사춘기 자녀와 절대로 싸우지 않는 기적의 대화법 5원칙
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 부모의 불안에서 나오는 잔소리는 아이의 공부 의욕을 파괴합니다.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>부모의 말을 바꾸면 아이의 태도가 바뀝니다.<br/>• ❌ '공부 다 했어? 휴대폰 그만해!' → ⭕ '오늘 계획한 것 중에 가장 뿌듯했던 게 뭐야?'<br/>• ❌ '초등학교 땐 100점 맞더니 왜 이래?' → ⭕ '중학교 공부가 많이 어렵지? 어떤 과목이 제일 헷갈려?'<br/>• ❌ '너 커서 뭐 되려고 그래?' → ⭕ '네가 원하는 목표를 위해 엄마 아빠가 뭘 도와주면 좋을까?'<br/>• ❌ '옆집 민수는 수학 선행 끝냈대.' → ⭕ '다른 아이 신경 쓰지 말자. 지난달보다 네가 성장한 게 제일 중요해.'</p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 맺음말 • 담임의 격려</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 42 -</div>
+    
+    <h3 class="chapter-title serif" style="font-size: 15pt; color: #0369a1; border-bottom: 1px solid #e2e8f0; padding-bottom: 3mm; margin-bottom: 5mm;">
+      새벽을 여는 자가 중학교의 주인이 됩니다
+    </h3>
+    <div class="highlight-box" style="margin-top: 0; margin-bottom: 5mm;">
+      <strong>핵심 가이드:</strong> 사랑하는 학생 여러분, 그리고 학부모님.
+    </div>
+    <div style="font-size: 10.5pt; line-height: 1.8; text-align: justify;">
+      <p>중학교 입학은 인생의 두 번째 출발선입니다. 초등학교 때 성적이 어떠했든 중요하지 않습니다. 올바른 공부법을 알고, 스스로 계획을 세워 매일 30분씩 꾸준히 실천하는 아이가 결국 최후의 승자가 됩니다.<br/><br/>6학년 3반 담임 교사로서 온 마음을 다해 여러분의 빛나는 중학교 생활을 응원합니다. 책장을 덮고, 지금 당장 첫 번째 계획을 세우십시오. 여러분의 새벽은 이미 밝아오고 있습니다.<br/><br/><strong>- 6학년 3반 교실 연구소 일동 -</strong></p>
+    </div>
+    <div style="margin-top: 15mm; padding: 4mm; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; font-size: 9.5pt; color: #64748b;">
+      💡 <strong>담임 선생님의 실천 체크포인트:</strong> 오늘 읽은 내용을 바탕으로 '나만의 실천 노트'에 핵심 문장 1개를 요약하고, 데일리 스터디 플래너에 실행 목표를 반영하십시오.
+    </div>
+  </div>
+
+  <div class="page" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+    
+    <div class="running-header">
+      <span>꿈을 여는 공부의 새벽 • 판권지</span>
+      <span>지은이: 6학년 3반 담임 선생님</span>
+    </div>
+    <div class="page-number">- 43 -</div>
+    
+    <div style="max-width: 140mm; border: 1px solid #cbd5e1; padding: 10mm; border-radius: 12px; background: #f8fafc;">
+      <h3 class="serif" style="font-size: 16pt; color: #0f172a; margin-bottom: 3mm;">꿈을 여는 공부의 새벽</h3>
+      <p style="font-size: 10pt; color: #64748b; margin-bottom: 6mm;">예비 중학생을 위한 빛나는 시작 (완결본)</p>
+      <div style="font-size: 9pt; color: #475569; line-height: 1.8; text-align: left; border-top: 1px solid #e2e8f0; padding-top: 4mm;">
+        <p>• <strong>지은이:</strong> 6학년 3반 담임 선생님</p>
+        <p>• <strong>발행처:</strong> 6학년 3반 교실 연구소</p>
+        <p>• <strong>발행일:</strong> 2026년 10월 01일</p>
+        <p>• <strong>총 페이지:</strong> 43 Pages 완결본</p>
+        <p>• <strong>정가:</strong> 70,000 미소 (경제앱 박희망 입금 전용)</p>
+        <p>• <strong>고객지원:</strong> help@classroom6-3.kr</p>
+      </div>
+      <p style="font-size: 8pt; color: #94a3b8; margin-top: 6mm;">
+        Copyright © 2026 6학년 3반 교실 연구소 All Rights Reserved.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
+

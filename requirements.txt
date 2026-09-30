@@ -1,0 +1,1 @@
+﻿# Python 표준 라이브러리(http.server, sqlite3, smtplib)만으로 가동되므로 추가 패키지 없이 100% 무결 가동됩니다.

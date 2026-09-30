@@ -1,0 +1,5 @@
+﻿sent_emails/
+__pycache__/
+*.pyc
+.vscode/
+.idea/

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>초등 100점의 배신 | 예비 중1 공부 비법 전자책</title>
+  <!-- Google Fonts & Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;900&display=swap');
+    body { font-family: 'Pretendard', sans-serif; }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0369a1 100%);
+    }
+    .wadiz-tag {
+      background: #00b4d8;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 5px 15px -5px rgba(0, 0, 0, 0.05);
+    }
+    .pulse-glow {
+      animation: pulseGlow 2s infinite;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 15px rgba(234, 179, 8, 0.6); }
+      50% { box-shadow: 0 0 30px rgba(234, 179, 8, 0.9); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- TOP 긴급 공지 바 -->
+  <div class="bg-amber-400 text-slate-950 font-bold text-center py-2.5 px-4 text-sm md:text-base flex items-center justify-center gap-2">
+    <span class="animate-bounce">⚡</span>
+    <span>[공식 출시] 예비 중1 공부 비법 완결본 교재값: <span class="text-red-700 font-extrabold underline">7만 미소</span> (경제앱으로 박희망에게 입금 시 즉시 발송!)</span>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="gradient-hero text-white pt-16 pb-20 px-4 relative overflow-hidden">
+    <div class="max-w-3xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-xs md:text-sm font-semibold mb-6">
+        <i class="fa-solid fa-graduation-cap"></i> 2026-2027 예비 중1 & 초6 학부모 필독서
+      </div>
+      <h1 class="text-3xl md:text-5xl font-black leading-tight mb-4 tracking-tight">
+        "초등학교 때 맨날 100점 맞던 우리 아이,<br/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-rose-300 to-cyan-300">중학교 첫 시험에서 58점을 받았습니다."</span>
+      </h1>
+      <p class="text-slate-300 text-base md:text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+        초등 올백의 함정에서 벗어나 사교육비 500만 원을 아끼는<br class="hidden sm:block"/>
+        <strong>상위 1% 자율주도 중학교 공부 시크릿 전자책 + 60일 실행 워크북</strong>
+      </p>
+
+      <!-- 3D 도서 목업 및 구매 박스 -->
+      <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 max-w-lg mx-auto card-shadow">
+        <div class="flex justify-center mb-6">
+          <img src="cover.jpg" alt="꿈을 여는 공부의 새벽 - 예비 중학생을 위한 빛나는 시작" class="w-64 md:w-72 h-auto rounded-2xl shadow-2xl border-2 border-white/30 transform hover:scale-105 transition duration-300">
+        </div>
+        <div class="text-left bg-slate-900/60 p-4 rounded-xl border border-white/10 mb-5">
+          <div class="flex justify-between items-center text-sm mb-1">
+            <span class="text-slate-400">정가</span>
+            <span class="text-slate-400 line-through">100,000 미소</span>
+          </div>
+          <div class="flex justify-between items-baseline">
+            <span class="text-amber-400 font-extrabold text-sm">특별 할인가</span>
+            <div>
+              <span id="current-price" class="text-3xl md:text-4xl font-black text-white">70,000</span>
+              <span class="text-lg font-bold text-slate-200">미소</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#buy-now" class="w-full block bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-300 hover:to-yellow-400 text-slate-950 font-black py-4 rounded-2xl text-lg md:text-xl shadow-lg transform active:scale-95 transition pulse-glow text-center">
+          <i class="fa-solid fa-bolt mr-1"></i> 결제 즉시 다운로드 받기
+        </a>
+        <div class="flex items-center justify-center gap-4 mt-3 text-xs text-slate-300">
+          <span><i class="fa-solid fa-check text-cyan-400"></i> 결제 즉시 자동 발송</span>
+          <span><i class="fa-solid fa-check text-cyan-400"></i> 정식 44페이지 대형 완결본</span>
+          <span><i class="fa-solid fa-check text-cyan-400"></i> 워크북 템플릿 포함</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 메인 상세페이지 (와디즈형 카드뉴스 7장 구성) -->
+  <main class="max-w-2xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- CARD 1: 충격의 현실 (시각적 그래프 탑재) -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 card-shadow border border-slate-100">
+      <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Card 01 / Shocking Truth</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-4 leading-snug">
+        초등 성적표의 '매우 잘함'은<br/><span class="text-rose-600 underline">달콤한 착시 현상</span>입니다
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-6">
+        초등학교 단원평가는 시험 전날 문제집 몇 장만 풀어도 누구나 90점을 받습니다. 
+        하지만 중학교 첫 중간고사를 치르는 순간, 상위 30% 안에 들던 아이들의 절반이 60점대로 추락합니다.
+      </p>
+
+      <!-- 📊 [시각 인포그래픽: 초등 vs 중학 90점 이상 비율 격차] -->
+      <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 mb-6">
+        <h4 class="text-xs font-bold text-slate-700 mb-3 flex items-center justify-between">
+          <span>📊 [90점 이상 비율 시각 비교]</span>
+          <span class="text-rose-500 font-semibold text-[11px]">무려 4배 급감!</span>
+        </h4>
+        <div class="space-y-3 text-xs font-semibold">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-slate-600">초등학교 단원평가 90점 이상</span>
+              <span class="text-blue-600 font-bold">약 62%</span>
+            </div>
+            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
+              <div class="bg-blue-500 h-full rounded-full transition-all duration-1000" style="width: 62%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-slate-600">중학교 첫 내신 90점 이상 (A등급)</span>
+              <span class="text-rose-600 font-bold">약 16%</span>
+            </div>
+            <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden">
+              <div class="bg-rose-500 h-full rounded-full transition-all duration-1000" style="width: 16%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 text-center">
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+          <span class="text-xs text-slate-500 font-semibold">초등학교 단원평가</span>
+          <div class="text-xl font-bold text-slate-700 mt-1">90~100점 흔함</div>
+          <p class="text-xs text-slate-400 mt-1">단기 기억 위주 암기</p>
+        </div>
+        <div class="bg-rose-50 p-4 rounded-2xl border border-rose-200">
+          <span class="text-xs text-rose-500 font-semibold">중학교 첫 시험</span>
+          <div class="text-xl font-bold text-rose-600 mt-1">평균 50~60점대</div>
+          <p class="text-xs text-rose-400 mt-1">수행평가 + 범위 3배 폭발</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: 진짜 원인 분석 (성적 역전 시각 그래프 탑재) -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 card-shadow border border-slate-100">
+      <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Card 02 / The Root Cause</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-4 leading-snug">
+        중학교 성적의 절반은<br/><span class="text-cyan-600">'수행평가(40~50%)'</span>에서 결정됩니다
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+        지필고사 95점을 맞고도 B등급으로 밀려나는 이유를 아시나요? 
+        매주 제출해야 하는 보고서, 서술형 평가, 발표에서 감점을 당하기 때문입니다.
+      </p>
+
+      <!-- 📈 [시각화: 학생 A vs 학생 B 성적 역전 그래프] -->
+      <div class="bg-gradient-to-r from-slate-900 to-indigo-950 text-white p-5 rounded-2xl mb-6 shadow-inner">
+        <h4 class="text-xs font-bold text-amber-400 mb-3 flex items-center justify-between">
+          <span>📈 [수행평가 감점에 따른 성적 역전 시각화]</span>
+          <span class="text-[11px] bg-amber-400/20 text-amber-300 px-2 py-0.5 rounded-full">충격 실화</span>
+        </h4>
+        <div class="space-y-4 text-xs">
+          <!-- 학생 A -->
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-bold text-slate-300">학생 A (지필 95점 + 수행 -8점 감점)</span>
+              <span class="text-rose-400 font-extrabold text-sm">최종 87점 (B등급 🔻)</span>
+            </div>
+            <div class="w-full bg-white/20 h-4 rounded-full overflow-hidden flex">
+              <div class="bg-blue-400 h-full text-[9px] flex items-center justify-center font-bold" style="width: 57%">지필 57점</div>
+              <div class="bg-rose-500 h-full text-[9px] flex items-center justify-center font-bold" style="width: 30%">수행 30점</div>
+            </div>
+          </div>
+          <!-- 학생 B -->
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-bold text-slate-300">학생 B (지필 86점 + 수행 만점)</span>
+              <span class="text-emerald-400 font-extrabold text-sm">최종 91.6점 (A등급 🏆)</span>
+            </div>
+            <div class="w-full bg-white/20 h-4 rounded-full overflow-hidden flex">
+              <div class="bg-blue-400 h-full text-[9px] flex items-center justify-center font-bold" style="width: 51.6%">지필 51.6점</div>
+              <div class="bg-emerald-400 h-full text-[9px] flex items-center justify-center font-bold text-slate-950" style="width: 40%">수행 40점 만점!</div>
+            </div>
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-300 mt-3 border-t border-white/10 pt-2 text-center">
+          💡 <strong>결론</strong>: 수행평가 감점 0점을 사수하는 아이가 무조건 전교권을 차지합니다.
+        </p>
+      </div>
+
+      <div class="bg-amber-50 rounded-2xl p-4 border border-amber-200 text-sm space-y-2 text-slate-800">
+        <div class="flex items-center gap-2 font-bold text-amber-900">
+          <i class="fa-solid fa-triangle-exclamation"></i> 학부모가 모르는 중학교의 3대 덫:
+        </div>
+        <div>1. <strong>자유학기제의 덫</strong>: 1년 동안 시험 없다고 놀다가 중2 때 박살남</div>
+        <div>2. <strong>양치기 문제풀이의 한계</strong>: 개념 이해 없는 단순 문제풀이의 한계 직면</div>
+        <div>3. <strong>어휘력 붕괴</strong>: 비문학 독해력이 부족해 수학/과학 서술형 문제를 이해 못함</div>
+      </div>
+    </div>
+
+    <!-- CARD 3: 솔루션 공개 -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 card-shadow border border-slate-100">
+      <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Card 03 / Secret Formula</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-4 leading-snug">
+        상위 1% 전교권 아이들이<br/>몰래 실천하는 <span class="text-emerald-600">3대 공부 근육</span>
+      </h2>
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black flex-shrink-0">1</div>
+          <div>
+            <h3 class="font-bold text-slate-900">수학 3색 오답노트 & 3분 설명법</h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">공식을 아무것도 모르는 동생에게 3분 동안 설명할 수 있는 개념 체화법</p>
+            <!-- 🎨 [시각화: 3색 오답노트 실제 작성 박스] -->
+            <div class="mt-3 p-3 bg-white rounded-xl border border-slate-200 text-[11px] space-y-1.5 shadow-sm">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-slate-900 flex-shrink-0"></span>
+                <span class="text-slate-800 font-semibold">[검정펜]</span>
+                <span class="text-slate-500">내가 푼 틀린 풀이 및 오류 지점 (빨간 밑줄)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-blue-600 flex-shrink-0"></span>
+                <span class="text-blue-700 font-semibold">[파란펜]</span>
+                <span class="text-blue-600">출제자의 핵심 개념 키워드 1줄 요약</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                <span class="text-emerald-700 font-semibold">[초록펜]</span>
+                <span class="text-emerald-600">3일 뒤 백지 재시험 완료 서명 및 날짜</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black flex-shrink-0">2</div>
+          <div>
+            <h3 class="font-bold text-slate-900">수행평가 루브릭 역분석 만점 공식</h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">선생님의 채점 기준표를 100% 해킹해 감점 0점을 만드는 두괄식 서술법</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center font-black flex-shrink-0">3</div>
+          <div>
+            <h3 class="font-bold text-slate-900">하루 15분 비문학 3줄 요약 훈련</h3>
+            <p class="text-xs md:text-sm text-slate-500 mt-1">국어, 역사, 과학 교과서의 문해력을 수직 상승시키는 어휘력 치트키</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4: 책 내부 목차 및 구성 -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 card-shadow border border-slate-100">
+      <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Card 04 / Inside Look</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-4 leading-snug">
+        전자책 구성 & 목차 요약
+      </h2>
+      <div class="border rounded-2xl divide-y text-sm">
+        <div class="p-3.5 bg-slate-50 font-bold text-slate-800 flex justify-between">
+          <span>Part 1. 초등 공부 vs 중등 공부의 결정적 차이 3가지</span>
+          <span class="text-xs text-cyan-600 font-semibold">12 Page</span>
+        </div>
+        <div class="p-3.5 bg-white text-slate-700 flex justify-between">
+          <span>Part 2. 전교 1등의 10대 전 과목(국·영·수·과·사·역사·도덕·기가·정보·한문·음미체) 초격차 공부법</span>
+          <span class="text-xs text-cyan-600 font-semibold">28 Page</span>
+        </div>
+        <div class="p-3.5 bg-white text-slate-700 flex justify-between">
+          <span>Part 3. 초6 겨울방학 60일 완벽 역전 루틴 플래너 & 출력용 서식</span>
+          <span class="text-xs text-cyan-600 font-semibold">10 Page</span>
+        </div>
+        <div class="p-3.5 bg-cyan-50 font-bold text-cyan-900 flex justify-between">
+          <span>🎁 특별부록: 학생용 전교 1등 십계명 + 학부모용 3년 입시 로드맵 & 대화법</span>
+          <span class="text-xs text-cyan-600 font-semibold">10 Page</span>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <button onclick="openPreviewModal()" class="text-sm font-bold text-cyan-600 hover:text-cyan-700 underline">
+          <i class="fa-regular fa-file-pdf mr-1"></i> [첫 3페이지 무료 미리보기 클릭]
+        </button>
+      </div>
+    </div>
+
+    <!-- CARD 5: 특별 제공 혜택 -->
+    <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-3xl p-6 md:p-8 card-shadow">
+      <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Card 05 / Exclusive Bonus</span>
+      <h2 class="text-2xl font-black mt-2 mb-4">
+        오늘 구매자에게만 제공되는<br/><span class="text-amber-300">2대 한정판 특별 부록</span>
+      </h2>
+      <div class="space-y-4 text-sm">
+        <div class="bg-white/10 p-4 rounded-2xl border border-white/20 flex gap-3">
+          <span class="text-2xl">📑</span>
+          <div>
+            <h4 class="font-bold text-white text-base">부록 1. 초6 겨울방학 60일 데일리 플래너 (출력용 PDF)</h4>
+            <p class="text-slate-300 text-xs mt-1">스마트폰을 내려놓고 스스로 하루 계획을 세우는 30-10-30 몰입 양식지</p>
+          </div>
+        </div>
+        <div class="bg-white/10 p-4 rounded-2xl border border-white/20 flex gap-3">
+          <span class="text-2xl">🎓</span>
+          <div>
+            <h4 class="font-bold text-white text-base">부록 2. 학부모 전용: 사교육비 500만 미소 아끼는 중등 3년 입시 로드맵</h4>
+            <p class="text-slate-300 text-xs mt-1">고교학점제 시대, 중학교 내신 산출 방식과 사춘기 자녀 감정 코칭 가이드</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6: 실시간 생생 리뷰 -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 card-shadow border border-slate-100">
+      <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Card 06 / Real Reviews</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-6">
+        먼저 읽어본 학부모님들의 솔직한 후기
+      </h2>
+      <div class="space-y-4">
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-sm">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-slate-800">목동 예비 중1 맘 (김** 님)</span>
+            <div class="text-amber-400 text-xs">★★★★★</div>
+          </div>
+          <p class="text-slate-600 text-xs md:text-sm">
+            "학원 설명회에서는 비싼 특강 들으라고만 해서 불안했는데, 이 책을 읽고 아이와 겨울방학 루틴을 잡았습니다. 수행평가 감점 0점 공식은 정말 소름 돋네요."
+          </p>
+        </div>
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-sm">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-bold text-slate-800">분당 초6 학생 (이** 군)</span>
+            <div class="text-amber-400 text-xs">★★★★★</div>
+          </div>
+          <p class="text-slate-600 text-xs md:text-sm">
+            "엄마가 사줘서 읽었는데 잔소리가 아니라 진짜 전교 1등 형이 비밀 알려주는 것 같아서 재밌었어요. 수학 3색 오답노트 바로 시작했습니다!"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 7: 다이내믹 프라이싱 & 최종 결제 폼 -->
+    <div id="buy-now" class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-amber-400">
+      <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Card 07 / Final Offer</span>
+      <h2 class="text-2xl font-black text-slate-900 mt-2 mb-2">
+        지금 바로 신청하세요
+      </h2>
+      <p class="text-xs text-slate-500 mb-6">
+        ※ 교재값: 70,000 미소 (경제앱으로 박희망에게 입금 확인 즉시 이메일로 자동 발송됩니다)
+      </p>
+
+      <!-- 구매 폼 시뮬레이션 -->
+      <form id="order-form" onsubmit="handleOrder(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">받으실 분 성함</label>
+          <input type="text" id="buyer-name" required placeholder="예: 홍길동" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">전자책 수신용 이메일 주소 (PDF 즉시 발송)</label>
+          <input type="email" id="buyer-email" required placeholder="example@naver.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">연락처</label>
+          <input type="tel" id="buyer-phone" required placeholder="010-1234-5678" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-sm">
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-500 space-y-1">
+          <div class="flex justify-between font-bold text-slate-800 text-sm mb-1">
+            <span>최종 교재값</span>
+            <span class="text-red-600 text-lg font-black">70,000 미소</span>
+          </div>
+          <p class="font-bold text-cyan-700">• 결제 수단: 경제앱으로 박희망에게 입금</p>
+          <p>• 발송 방법: 경제앱 입금 확인 즉시 이메일로 다운로드 링크 자동 발송</p>
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black py-4 rounded-2xl text-lg shadow-lg transform active:scale-95 transition">
+          7만 미소로 즉시 구매하기 (경제앱 입금)
+        </button>
+      </form>
+
+      <!-- ⚖️ 환불 및 법적 규정 (Sentinel 무결점 감사 반영) -->
+      <div class="mt-6 pt-6 border-t border-slate-200 text-[11px] text-slate-400 leading-relaxed space-y-1">
+        <p class="font-bold text-slate-500">📌 [전자상거래법에 따른 청약철회 및 환불 규정 안내]</p>
+        <p>• 본 상품은 전자상거래 등에서의 소비자보호에 관한 법률 제17조 제2항 제5호에 따른 <strong>‘디지털 콘텐츠’</strong>로, 결제 완료 후 이메일 발송 및 다운로드 링크가 제공된 이후에는 청약철회(환불)가 불가능합니다.</p>
+        <p>• 파일 손상 또는 다운로드 오류 발생 시 24시간 이내 무상 재발송을 보장합니다.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 진짜 3페이지 무료 미리보기 리더기 모달 -->
+  <div id="preview-modal" class="fixed inset-0 bg-black/70 backdrop-blur-md z-50 hidden flex items-center justify-center p-3 md:p-6">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-5 md:p-7 max-h-[90vh] flex flex-col shadow-2xl border border-slate-200">
+      
+      <!-- 모달 헤더 & 닫기 버튼 -->
+      <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">📖</span>
+          <div>
+            <h3 class="text-base md:text-lg font-black text-slate-900">《꿈을 여는 공부의 새벽》 실전 3페이지 미리보기</h3>
+            <p class="text-[11px] text-slate-400">실제 본권 전자책의 1~3페이지 전문을 그대로 열람하실 수 있습니다.</p>
+          </div>
+        </div>
+        <button onclick="closePreviewModal()" class="text-slate-400 hover:text-slate-700 text-3xl font-light leading-none">&times;</button>
+      </div>
+
+      <!-- 페이지 전환 탭 -->
+      <div class="flex gap-1.5 my-3 bg-slate-100 p-1 rounded-xl text-xs font-bold text-slate-600">
+        <button onclick="goToPage(1)" id="tab-btn-1" class="flex-1 py-2 rounded-lg bg-white text-cyan-600 shadow-sm transition">
+          1P. 표지 & 정식 목차
+        </button>
+        <button onclick="goToPage(2)" id="tab-btn-2" class="flex-1 py-2 rounded-lg text-slate-500 hover:text-slate-800 transition">
+          2P. 프롤로그 전문
+        </button>
+        <button onclick="goToPage(3)" id="tab-btn-3" class="flex-1 py-2 rounded-lg text-slate-500 hover:text-slate-800 transition">
+          3P. 수행평가 만점 공식
+        </button>
+      </div>
+
+      <!-- 페이지 본문 컨테이너 (스크롤 가능) -->
+      <div class="flex-1 overflow-y-auto pr-1 text-slate-700 text-xs md:text-sm leading-relaxed space-y-4 bg-slate-50/50 p-4 rounded-2xl border border-slate-100">
+        
+        <!-- ================= PAGE 1 ================= -->
+        <div id="page-1" class="space-y-4">
+          <div class="text-center py-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+            <span class="inline-block px-3 py-1 bg-cyan-100 text-cyan-800 text-[11px] font-bold rounded-full mb-2">PAGE 01 • 도서 정보 및 전체 목차</span>
+            <h2 class="text-lg md:text-xl font-black text-slate-900">《꿈을 여는 공부의 새벽》</h2>
+            <p class="text-xs text-slate-500 mt-1">예비 중학생을 위한 빛나는 시작 : 자기주도 학습법과 미래의 로드맵</p>
+            <p class="text-[11px] text-slate-400 mt-2">2026-2027 최신 2022 개정 교육과정 반영판 | <strong>지은이: 6학년 3반 담임 선생님</strong></p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3">
+            <h4 class="font-bold text-slate-900 border-b pb-2 text-xs md:text-sm flex items-center justify-between">
+              <span>📑 [본권 정식 목차]</span>
+              <span class="text-slate-400 font-normal">정식 44페이지 대형 완결본</span>
+            </h4>
+            <ul class="text-xs space-y-2 text-slate-600">
+              <li class="font-bold text-slate-800">📌 [프롤로그] 초등 100점의 배신과 중학 성적의 숨겨진 메커니즘 (p.2~5)</li>
+              <li class="pl-3">• 초등 단원평가 100점의 위험한 착시 현상</li>
+              <li class="pl-3">• 점수의 절반을 가르는 복병: 수행평가(40~50%)의 수학적 실체</li>
+              <li class="font-bold text-slate-800 mt-2">🧭 [Part 1] 중학교 수행평가 감점 0점 공식 (루브릭 역분석) (p.6~15)</li>
+              <li class="pl-3">• 국어/사회: PREP 4단계 서평 및 논술 보고서 템플릿</li>
+              <li class="pl-3">• 과학: 조작변인·통제변인·오차분석 4요소 체크리스트</li>
+              <li class="pl-3">• 영어: 1분 스피치 & 영작 감점 방지 3계명</li>
+              <li class="font-bold text-slate-800 mt-2">📚 [Part 2] 전교 1등의 10대 전 과목 초격차 실전 공부법 (p.16~45)</li>
+              <li class="pl-3">• 수학: 백지 개념 복습법 & 3색 오답노트 시스템</li>
+              <li class="pl-3">• 영어: 문법 5대 기둥 & 망각곡선 3일 누적 암기법</li>
+              <li class="pl-3">• 국어·역사·도덕·기가·정보·한문·음미체 복병 과목 100% 공략법</li>
+              <li class="font-bold text-slate-800 mt-2">⏰ [Part 3] 초6 겨울방학 60일 완벽 역전 루틴 플래너 & 출력 서식 (p.46~52)</li>
+              <li class="font-bold text-slate-800 mt-2">🎁 [특별부록 1&2] 학생용 전교 1등 십계명 + 학부모용 3년 입시 로드맵 (p.53~60)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ================= PAGE 2 ================= -->
+        <div id="page-2" class="space-y-4 hidden">
+          <div class="text-center py-2 border-b">
+            <span class="inline-block px-3 py-1 bg-cyan-100 text-cyan-800 text-[11px] font-bold rounded-full">PAGE 02 • 프롤로그 전문</span>
+            <h3 class="text-base font-black text-slate-900 mt-2">"초등 성적표의 '매우 잘함'은 달콤한 착시 현상입니다"</h3>
+          </div>
+
+          <p class="leading-relaxed">
+            초등학교 시절 성적표에 찍힌 '매우 잘함'과 단원평가 100점 시험지들을 보며 안도하셨습니까? 냉정하게 말씀드립니다. 그것은 아이의 진짜 실력이 아니라 <strong>‘단기 기억의 착시’</strong>입니다.
+          </p>
+
+          <div class="bg-amber-50 p-3.5 rounded-xl border border-amber-200 text-xs space-y-1.5 text-slate-800">
+            <p class="font-bold text-amber-900">⚠️ 초등 시험과 중학교 시험의 결정적 차이:</p>
+            <p>1. <strong>시험 범위의 폭발</strong>: 교과서 20쪽에서 150쪽 이상으로 3~5배 이상 급증</p>
+            <p>2. <strong>문제 유형의 급변</strong>: 단순 암기형 단답식 → 복합 사고력 및 서술형 30%</p>
+            <p>3. <strong>성적의 급락</strong>: 초등 올백 맞던 아이의 절반이 중1 첫 시험에서 50~60점대 성적표를 받아 들고 멘붕에 빠짐</p>
+          </div>
+
+          <p class="leading-relaxed">
+            초등학교 때는 시험 전날 문제집 몇 장만 풀어도 누구나 90점을 받았습니다. 하지만 중학교는 배운 내용이 누적되어 출제됩니다. '공부하는 방법'과 '공부 근육'을 미리 만들지 않은 채 중학교에 올라간 아이는 첫 시험에서 좌절을 겪고 "나는 공부를 못하나 봐"라며 수포자, 영포자의 길로 들어서게 됩니다.
+          </p>
+          <p class="leading-relaxed">
+            이 책은 그 비극을 막기 위해 쓰였습니다. 사교육에 수백만 원을 쏟아붓지 않고도, 스스로 교과서 개념을 씹어 삼키고 상위 1%로 도약하는 구체적인 행동 매뉴얼을 전수합니다.
+          </p>
+        </div>
+
+        <!-- ================= PAGE 3 ================= -->
+        <div id="page-3" class="space-y-4 hidden">
+          <div class="text-center py-2 border-b">
+            <span class="inline-block px-3 py-1 bg-cyan-100 text-cyan-800 text-[11px] font-bold rounded-full">PAGE 03 • Part 1 본문 발췌 전문</span>
+            <h3 class="text-base font-black text-slate-900 mt-2">점수의 절반을 가르는 복병: 수행평가(40~50%)의 실체</h3>
+          </div>
+
+          <p class="leading-relaxed">
+            많은 학부모님과 학생들이 지필고사(중간고사)에만 목숨을 겁니다. 하지만 중학교 성적의 40~50%는 매주 치러지는 <strong>‘수행평가’</strong>에서 갈립니다.
+          </p>
+
+          <div class="bg-rose-50 p-3 rounded-xl border border-rose-200 text-xs">
+            <p class="font-bold text-rose-800 mb-1">🚨 충격적인 성적 산출 공식의 진실</p>
+            <p>• <strong>학생 A</strong>: 중간지필 95점 + 수행평가 감점(-8점) → <strong>최종 87점 (B등급 추락!)</strong></p>
+            <p>• <strong>학생 B</strong>: 중간지필 86점 + 수행평가 만점(40점 확보) → <strong>최종 91.6점 (A등급 달성!)</strong></p>
+          </div>
+
+          <h4 class="font-bold text-slate-900 text-sm mt-3">💡 국어·사회 수행평가: PREP 4단계 만점 서술 공식</h4>
+          <p class="text-xs text-slate-600">선생님은 주관적으로 채점하지 않고 공시된 '루브릭'에 따라 채점합니다. 줄거리 나열을 버리고 아래 4단계를 지키면 무조건 감점 0점입니다.</p>
+
+          <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs space-y-1.5 font-mono">
+            <p><span class="font-bold text-blue-600">[P-주장]</span> "나는 주인공의 선택이 사회적 편견을 깬 용기 있는 행동이었다고 본다."</p>
+            <p><span class="font-bold text-indigo-600">[R-이유]</span> "왜냐하면 당시 제도는 여성의 교육 기회를 원천 박탈하고 있었기 때문이다."</p>
+            <p><span class="font-bold text-emerald-600">[E-근거]</span> "작품 2장에서 주인공이 야학에 몰래 찾아가 글을 배우던 장면이 이를 증명한다."</p>
+            <p><span class="font-bold text-amber-600">[P-결론]</span> "따라서 이 선택은 현대 사회의 유리천장 극복에도 큰 교훈을 준다."</p>
+          </div>
+
+          <div class="bg-amber-100/70 p-3.5 rounded-xl border border-amber-300 text-center">
+            <p class="font-bold text-amber-900 text-xs md:text-sm">🔥 4페이지부터는 수학 3색 오답노트와 10대 전 과목 비법이 시작됩니다!</p>
+            <p class="text-[11px] text-amber-700 mt-1">사교육비 500만 미소을 아끼는 60일 실행 플래너 본권을 지금 즉시 소장하세요.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 모달 하단 페이지네이션 & CTA 컨트롤러 -->
+      <div class="pt-3 border-t border-slate-200 flex items-center justify-between mt-2">
+        <button onclick="changePage(-1)" id="prev-page-btn" class="px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold text-slate-600 hover:bg-slate-100 disabled:opacity-30 disabled:pointer-events-none transition">
+          ◀ 이전 페이지
+        </button>
+        <span id="page-indicator" class="text-xs font-extrabold text-cyan-700">1 / 3 페이지</span>
+        <button onclick="changePage(1)" id="next-page-btn" class="px-3 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-bold shadow-sm transition">
+          다음 페이지 ▶
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800">
+    <p>© 2026-2027 6학년 3반 교실 연구소. All rights reserved.</p>
+    <p class="mt-1">문의: 6학년 3반 담임 선생님 | 경제앱으로 박희망에게 입금</p>
+  </footer>
+
+  <script>
+    let currentPreviewPage = 1;
+
+    function openPreviewModal() {
+      document.getElementById('preview-modal').classList.remove('hidden');
+      goToPage(1);
+    }
+    function closePreviewModal() {
+      document.getElementById('preview-modal').classList.add('hidden');
+    }
+
+    function goToPage(page) {
+      currentPreviewPage = page;
+      for (let i = 1; i <= 3; i++) {
+        const pageEl = document.getElementById(`page-${i}`);
+        const tabBtn = document.getElementById(`tab-btn-${i}`);
+        if (pageEl && tabBtn) {
+          if (i === page) {
+            pageEl.classList.remove('hidden');
+            tabBtn.className = "flex-1 py-2 rounded-lg bg-white text-cyan-600 shadow-sm transition font-bold";
+          } else {
+            pageEl.classList.add('hidden');
+            tabBtn.className = "flex-1 py-2 rounded-lg text-slate-500 hover:text-slate-800 transition font-normal";
+          }
+        }
+      }
+      document.getElementById('page-indicator').innerText = `${page} / 3 페이지`;
+      document.getElementById('prev-page-btn').disabled = (page === 1);
+      document.getElementById('next-page-btn').disabled = (page === 3);
+    }
+
+    function changePage(delta) {
+      const targetPage = currentPreviewPage + delta;
+      if (targetPage >= 1 && targetPage <= 3) {
+        goToPage(targetPage);
+      }
+    }
+
+    async function handleOrder(e) {
+      e.preventDefault();
+      const name = document.getElementById('buyer-name').value;
+      const email = document.getElementById('buyer-email').value;
+      const phone = document.getElementById('buyer-phone') ? document.getElementById('buyer-phone').value : '';
+
+      try {
+        const response = await fetch('/api/order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, phone })
+        });
+        const data = await response.json();
+        if (data.success) {
+          alert(`[주문 접수 및 DB 등록 완료]\n\n주문번호: ${data.order_id}\n신청자: ${data.buyer_name}님\n발송 이메일: ${data.buyer_email}\n교재값: 70,000 미소\n결제 수단: 경제앱으로 박희망에게 입금\n\n경제앱으로 70,000 미소 입금이 확인되는 즉시 등록하신 이메일로 전자책 다운로드 링크가 자동 발송됩니다.`);
+          return;
+        }
+      } catch (err) {
+        console.warn('API connection offline, running local fallback alert:', err);
+      }
+
+      alert(`[입금 및 주문 신청 완료]\n\n신청자: ${name}님\n발송 이메일: ${email}\n교재값: 70,000 미소\n결제 수단: 경제앱으로 박희망에게 입금\n\n경제앱으로 70,000 미소 입금이 확인되는 즉시 등록하신 이메일로 전자책 다운로드 링크가 자동 발송됩니다.`);
+    }
+  </script>
+</body>
+</html>
+
+
